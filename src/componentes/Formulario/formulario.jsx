@@ -1,34 +1,39 @@
 import React from 'react';
 import './formulario.css';
+import { useForm } from 'react-hook-form';
 
 export default function Formulario() {
-  /*const {
+  const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
   } = useForm();
-*/
+
+  function printData(data) {
+    console.log(data);
+  }
+
   return (
-    <form>
+    <form onSubmit={handleSubmit(printData)}>
       <label>
         Nome
-        <input />
+        <input {...register('fullName')} />
       </label>
 
       <label>
         Email
-        <input />
+        <input {...register('email')} />
       </label>
 
       <label>
         Cep
-        <input />
+        <input {...register('cep')} />
       </label>
 
       <label>
         Endereço
-        <input />
+        <input {...register('endereco')} />
       </label>
 
       <button>Cadastrar</button>
