@@ -2,6 +2,13 @@ import React from 'react';
 import './formulario.css';
 
 export default function Formulario() {
+  /*const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+*/
   return (
     <form>
       <label>
@@ -23,6 +30,8 @@ export default function Formulario() {
         Endereço
         <input />
       </label>
+
+      <button>Cadastrar</button>
     </form>
   );
 }
