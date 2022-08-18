@@ -1,29 +1,38 @@
 import React from 'react';
 import './formulario.css';
 import { useForm } from 'react-hook-form';
+import { ErrorMessage } from '@hookform/error-message';
 
 export default function Formulario() {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
+  console.log({ errors });
+
   function printData(data) {
-    console.log(data);
+    console.log(data, ' -----');
   }
 
   return (
     <form onSubmit={handleSubmit(printData)}>
       <label>
         Nome
-        <input {...register('fullName')} />
+        <input
+          {...register('fullName', { required: 'O nome é obrigatório' })}
+        />
+        <ErrorMessage
+          errors={errors}
+          name='fullName'
+          render={({ message }) => <span>{message}</span>}
+        />
       </label>
 
       <label>
         Email
-        <input {...register('email')} />
+        <input {...register('e-mail')} />
       </label>
 
       <label>
@@ -36,7 +45,7 @@ export default function Formulario() {
         <input {...register('endereco')} />
       </label>
 
-      <button>Cadastrar</button>
+      <button type='submit'>Cadastrar</button>
     </form>
   );
 }
