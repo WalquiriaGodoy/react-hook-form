@@ -1,0 +1,12 @@
+{
+  "Alunos": [
+    {
+      "id": 1,
+      "nome": "Walquiria"
+    },
+    {
+      "id": 2,
+      "nome": "Marcos"
+    }
+  ]
+}

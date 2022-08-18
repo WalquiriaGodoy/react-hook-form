@@ -2,6 +2,7 @@ import React from 'react';
 import './formulario.css';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
+import axios from 'axios';
 
 export default function Formulario() {
   const {
@@ -15,6 +16,30 @@ export default function Formulario() {
   function printData(data) {
     console.log(data, ' -----');
   }
+
+  /*
+
+  function pushData(data) {
+    axios.post("URL", data)
+    .then(() => {
+      console.log("Deu tudo certo")
+    })
+    .catch(() => {
+      console.log("Deu errado")
+    })
+  }
+
+  function getData() {
+    axios.get("URL")
+    .then((response) => {
+      console.log(response.data)
+    })
+    .catch(() => {
+      console.log("Deu errado")
+    })
+  }
+
+  */
 
   return (
     <form onSubmit={handleSubmit(printData)}>
