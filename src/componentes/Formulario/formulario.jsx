@@ -13,36 +13,19 @@ export default function Formulario() {
 
   console.log({ errors });
 
-  function printData(data) {
-    console.log(data, ' -----');
-  }
-
-  /*
-
   function pushData(data) {
-    axios.post("URL", data)
-    .then(() => {
-      console.log("Deu tudo certo")
-    })
-    .catch(() => {
-      console.log("Deu errado")
-    })
+    axios
+      .post('http://localhost:3000/Alunos', data)
+      .then(() => {
+        console.log('Deu tudo certo');
+      })
+      .catch(() => {
+        console.log('Deu errado');
+      });
   }
-
-  function getData() {
-    axios.get("URL")
-    .then((response) => {
-      console.log(response.data)
-    })
-    .catch(() => {
-      console.log("Deu errado")
-    })
-  }
-
-  */
 
   return (
-    <form onSubmit={handleSubmit(printData)}>
+    <form onSubmit={handleSubmit(pushData)}>
       <label>
         Nome
         <input

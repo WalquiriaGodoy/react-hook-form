@@ -1,12 +1,53 @@
 {
   "Alunos": [
     {
-      "id": 1,
-      "nome": "Walquiria"
+      "fullName": "Marcela",
+      "e-mail": "",
+      "cep": "",
+      "endereco": "",
+      "id": 3
     },
     {
-      "id": 2,
-      "nome": "Marcos"
+      "fullName": "Marcela",
+      "e-mail": "marcela@gmail.com",
+      "cep": "05591-030",
+      "endereco": "19 Rua Professor Ari Bouzan",
+      "id": 4
+    },
+    {
+      "fullName": "Walquiria Godoy",
+      "e-mail": "walquiriagodoy@gmail.com",
+      "cep": "05590-030",
+      "endereco": "19 Rua Professor Ari Bouzan",
+      "id": 5
+    },
+    {
+      "fullName": "Walquiria Godoy",
+      "e-mail": "walquiriagodoy@gmail.com",
+      "cep": "05590-030",
+      "endereco": "19 Rua Professor Ari Bouzan",
+      "id": 6
+    },
+    {
+      "fullName": "teste",
+      "e-mail": "teste@gmail.com",
+      "cep": "05591-030",
+      "endereco": "19 Rua Professor Ari Bouzan",
+      "id": 7
+    },
+    {
+      "fullName": "teste2",
+      "e-mail": "teste@gmail.com",
+      "cep": "05591-030",
+      "endereco": "19 Rua Professor Ari Bouzan",
+      "id": 8
+    },
+    {
+      "fullName": "Walquiria Godoy",
+      "e-mail": "",
+      "cep": "",
+      "endereco": "",
+      "id": 9
     }
   ]
 }
