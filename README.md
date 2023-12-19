@@ -1,2 +1,2 @@
-# Curso: Formulários com React
+# Curso: Formulários com React Hook Form
 ## Formação React Alura
